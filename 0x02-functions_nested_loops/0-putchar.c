@@ -1,9 +1,12 @@
 #include <stdio.h>
+
 /**
  * main - prints a string
  *
  * Return: ALways returns 0
  */
+
+int _putchar(char c);
 
 int main(void)
 {
@@ -12,9 +15,9 @@ int main(void)
 
 	while (str[i] != '\0')
 	{
-		putchar(str[i]);
+		_putchar(str[i]);
 		i++;
 	}
-	putchar('\n');
+	_putchar('\n');
 	return (0);
 }
