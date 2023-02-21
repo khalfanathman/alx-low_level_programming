@@ -4,7 +4,7 @@
  *
  * @c: is a character passed to the function to be checked
  *
- * Return : it returns 1 if true and 0 if false
+ * Return: it returns 1 if true and 0 if false
  *
  *
  */
