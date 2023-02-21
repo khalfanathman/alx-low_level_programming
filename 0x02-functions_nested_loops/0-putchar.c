@@ -2,7 +2,7 @@
 
 /**
  * main - prints a string
- *
+ * @c: it is cahracter passed to _putchar function
  * Return: ALways returns 0
  */
 
