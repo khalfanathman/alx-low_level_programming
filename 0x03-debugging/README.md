@@ -1,6 +1,6 @@
 ##[0x03. C - Debugging]./(debugging) 
 
-!["ALX DUCK LOGO"](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2019/5/af682f2cbb6d73fd4e42.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20230222%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230222T112540Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=4fec53dd9acc3447ba57aebcef080379c1bf47ed968b0c828384a380d56cce96)
+!["ALX DUCK LOGO"](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2019/5/af682f2cbb6d73fd4e42.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20230222%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230222T130925Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=d3eda66bac8ccfa088c5d74c402042a413d4153d838ecb4495fc791e3921faa6)
 
 ###Learning Objectives
 At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
