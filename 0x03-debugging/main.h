@@ -49,9 +49,9 @@ void print_remaining_days(int month, int day, int year);
 /**
  * convert_day - convert day of month to day of year
  *
- * @date: date to calculate day of year for
- *
+ * @day: date to calculate day of year for
+ * @month: to used to converted to day
  * Return: day of year
  */
-int convert_day(int month,int day);
+int convert_day(int month, int day);
 #endif /* MAIN_H */
