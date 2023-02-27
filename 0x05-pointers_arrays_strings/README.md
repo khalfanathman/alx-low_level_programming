@@ -1,70 +1,38 @@
-#ifndef MAIN_H
-#define MAIN_H
+## ALX-low_level_programming
 
-/**
- * reset_to_98 - updates the value of an integer to 98.
- * @n: pointer to integer to update.
- */
-void reset_to_98(int *n);
+!["ALX logo"](https://www.alxafrica.com/wp-content/uploads/2023/02/Group-84508416-1.svg)
 
-/**
- * swap_int - swaps the values of two integers.
- * @a: pointer to first integer.
- * @b: pointer to second integer.
- */
-void swap_int(int *a, int *b);
+# Low Level Programming & Algorithms
 
-/**
- * _strlen - returns the length of a string.
- * @s: pointer to string.
- * Return: length of string.
- */
-int _strlen(char *s);
+A low-level programming language is a programming language that provides little or no abstraction from a computer's instruction set architecture—commands or functions in the language map closely to processor instructions. Generally this refers to either machine code or assembly language. The word "low" refers to the small or nonexistent amount of abstraction between the language and machine language; because of this, low-level languages are sometimes described as being "close to the hardware". Programs written in low-level languages tend to be relatively non-portable
 
-/**
- * _puts - prints a string to stdout.
- * @str: pointer to string.
- */
-void _puts(char *str);
+## Table of Contents
+* [About](#about)
+* [Requirements](#requirements)
+* [Projects](#projects)
+* [Credits](#credits)
 
-/**
- * print_rev - prints a string in reverse to stdout.
- * @s: pointer to string.
- */
-void print_rev(char *s);
+## About
+At ALX School, there are several tracks to become a full stack software engineer. One of those tracks is the low level programming track which covers the following:
 
-/**
- * rev_string - reverses a string.
- * @s: pointer to string.
- */
-void rev_string(char *s);
+- Compilation
+- Commenting code and following a coding style standard
+- Variables, types, operators, expressions, loops, nested loops
+- Conditional statements
+- Functions
+- Pre-processor, macros, header files, pointers, double pointers, function pointers, pointer arithmetic
+- Makefiles
+- Sorting and search algorithms
+and more!
 
-/**
- * puts2 - prints every other character of a string.
- * @str: pointer to string.
- */
-void puts2(char *str);
+## Requirements
+* Ubuntu 14.04 LTS
+* gcc 4.8.4 (-Wall, -Werror, -Wextra, and -pedantic flags)
 
-/**
- * puts_half - prints the second half of a string.
- * @str: pointer to string.
- */
-void puts_half(char *str);
-
-/**
- * print_array - prints n elements of an integer array.
- * @a: pointer to integer array.
- * @n: number of elements to print.
- */
-void print_array(int *a, int n);
-
-/**
- * _strcpy - copies a string to a destination buffer.
- * @dest: pointer to destination buffer.
- * @src: pointer to source string.
- * Return: pointer to destination buffer.
- */
-char *_strcpy(char *dest, char *src);
-
-#endif /* MAIN_H */
+## Projects
+1. [0x00-hello_world](./0x00-hello_world)
+2. [0x01-variables_if_else_while](./0x01-variables_if_else_while)
+3. [0x02-functions_nested_loops](./0x02-functions_nested_loops)
+4. [0x03-debugging](./0x03-Debugging)
+5. [0x04-more_functions_nested_loops](./0x04-more_functions_nested_loops)
 
