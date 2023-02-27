@@ -1,45 +1,70 @@
-## 0x05. C - Pointers, arrays and strings
+#ifndef MAIN_H
+#define MAIN_H
 
-![C ISN'T THAT HARD](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-low_level_programming/216/IMG_2410.JPG)
+/**
+ * reset_to_98 - updates the value of an integer to 98.
+ * @n: pointer to integer to update.
+ */
+void reset_to_98(int *n);
 
-### Resources
-#### Read or watch:
-* C - Arrays
-* C - Pointers
-* C - Strings
-* Memory Layout
+/**
+ * swap_int - swaps the values of two integers.
+ * @a: pointer to first integer.
+ * @b: pointer to second integer.
+ */
+void swap_int(int *a, int *b);
 
-## Learning Objectives
-- At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
+/**
+ * _strlen - returns the length of a string.
+ * @s: pointer to string.
+ * Return: length of string.
+ */
+int _strlen(char *s);
 
-## General
-* What are pointers and how to use them
-* What are arrays and how to use them
-* What are the differences between pointers and arrays
-* How to use strings and how to manipulate them
-* Scope of variables
-### Copyright - Plagiarism
-* You are tasked to come up with solutions for the tasks below yourself to meet with the above learning objectives.
-* You will not be able to meet the objectives of this or any following project by copying and pasting someone else’s work.
-* You are not allowed to publish any content of this project.
-* Any form of plagiarism is strictly forbidden and will result in removal from the program.
+/**
+ * _puts - prints a string to stdout.
+ * @str: pointer to string.
+ */
+void _puts(char *str);
 
-### Requirements
-## General
-* Allowed editors: vi, vim, emacs
-* All your files will be compiled on Ubuntu 20.04 LTS using gcc, using the options -Wall -Werror -Wextra -pedantic -std=gnu89
-* All your files should end with a new line
-* A ```README.md ``` file, at the root of the folder of the project is mandatory
-* Your code should use the Betty style. It will be checked using ```betty-style.pl``` and ```betty-doc.pl```
-* You are not allowed to use global variables
-* No more than 5 functions per file
-* You are not allowed to use the standard library. Any use of functions like ```printf```, ```puts```, etc… is forbidden
-* You are allowed to use ``` _putchar ```
-* You don’t have to push ```_putchar.c```, we will use our file. If you do it won’t be taken into account
-* In the following examples, the ``` main.c ``` files are shown as examples. You can use them to test your functions, but you don’t have to push them to your repo (if you do we won’t take them into account). We will use our own main.c files at compilation. Our main.c files might be different from the one shown in the examples
-* The prototypes of all your functions and the prototype of the function ``` _putchar ``` should be included in your header file called main.h
-* Don’t forget to ``` push``` your header file
+/**
+ * print_rev - prints a string in reverse to stdout.
+ * @s: pointer to string.
+ */
+void print_rev(char *s);
 
-### More Info
-* You do not need to learn about pointers to functions, pointers to pointers, multidimensional arrays, arrays of structures, malloc and free - yet.
+/**
+ * rev_string - reverses a string.
+ * @s: pointer to string.
+ */
+void rev_string(char *s);
+
+/**
+ * puts2 - prints every other character of a string.
+ * @str: pointer to string.
+ */
+void puts2(char *str);
+
+/**
+ * puts_half - prints the second half of a string.
+ * @str: pointer to string.
+ */
+void puts_half(char *str);
+
+/**
+ * print_array - prints n elements of an integer array.
+ * @a: pointer to integer array.
+ * @n: number of elements to print.
+ */
+void print_array(int *a, int n);
+
+/**
+ * _strcpy - copies a string to a destination buffer.
+ * @dest: pointer to destination buffer.
+ * @src: pointer to source string.
+ * Return: pointer to destination buffer.
+ */
+char *_strcpy(char *dest, char *src);
+
+#endif /* MAIN_H */
 
