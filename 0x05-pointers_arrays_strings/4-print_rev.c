@@ -1,4 +1,6 @@
+#include "main.h"
 #include <string.h>
+
 /**
  * print_rev - prints a string in reverse
  * @s: the string to be printed
@@ -13,9 +15,9 @@ void print_rev(char *s)
 	{
 		if (s[i] != '\n')
 		{
-			_putchar("%c", s[i]);
+			_putchar(s[i]);
 		}
 		i--;
 	}
-	_putchar("\n");
+	_putchar('\n');
 }
