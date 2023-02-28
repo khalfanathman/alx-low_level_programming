@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 #include <string.h>
 /**
  * _strcpy - main function to copy
