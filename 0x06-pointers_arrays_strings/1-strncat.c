@@ -20,6 +20,7 @@ char *_strncat(char *dest, char *src, int n)
 	}
 	newsrc[i] = '\0';
 	finally = strcat(dest, newsrc);
-	return (finally);
+
+return (finally);
 }
 
