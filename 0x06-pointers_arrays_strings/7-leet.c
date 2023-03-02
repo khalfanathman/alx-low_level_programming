@@ -1,28 +1,25 @@
 /**
- * leet - Encodes a string into 1337 (leet) speak
- * @str: The string to be encoded
+ * leet - leet
+ * @s: string
  *
- * Return: A pointer to the encoded string
+ * Return: char value
  */
-char *leet(char *str)
+char *leet(char *s)
 {
-	char leetMap[5][3] = {{'a', 'A', '4'}, {'e', 'E', '3'},
-		{'o', 'O', '0'}, {'t', 'T', '7'}, {'l', 'L', '1'}};
-	int i, j, k;
+	char alphaArr[] = "a4A4e3E3o0O0t7T7l1L1";
+	int i;
+	int j;
 
-	for (i = 0; str[i] != '\0'; i++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		for (j = 0; j < 5; j++)
+		for (j = 0; alphaArr[j] != '\0'; j++)
 		{
-			for (k = 0; k < 2; k++)
+			if (s[i] == alphaArr[j])
 			{
-				if (str[i] == leetMap[j][k])
-				{
-					str[i] = leetMap[j][2];
-				}
+				s[i] = alphaArr[j + 1];
+				break;
 			}
 		}
 	}
-	return (str);
+	return (s);
 }
-

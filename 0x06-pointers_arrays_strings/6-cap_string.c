@@ -1,32 +1,38 @@
-#include <ctype.h>
-
+#include "main.h"
 /**
- * cap_string - Capitalizes all words of a string
- * @str: The string to be capitalized
- *
- * Return: A pointer to the capitalized string
+ * _indexOf - returns boolean if special  character
+ * @a: character to return
+ * Return: true or false
  */
-char *cap_string(char *str)
+int _indexOf(char a)
 {
 	int i;
-	char *p = str;
-	int capitalize_next = 1;
+	char capArr[13] = {'\n', '\t', ' ', '.', ',', ';', ',', '!', '?', '(',
+')', '{', '}'};
 
-	while (*p != '\0')
+	for (i = 0; i < 13; i++)
 	{
-		if (isspace(*p) || ispunct(*p))
-		{
-			capitalize_next = 1;
-		}
-		else
-		{
-			if (capitalize_next)
-			{
-				*p = toupper(*p);
-				capitalize_next = 0;
-			}
-		}
-		p++;
+		if (capArr[i] == a)
+			return (1);
 	}
-	return (str);
+	return (0);
+}
+/**
+ * cap_string - capitalizes the string
+ * @s: string
+ * Return: the string capitalized
+ */
+char *cap_string(char *s)
+{
+	int i;
+
+	for (i = 0; s[i] != '\0'; i++)
+	{
+		if (_indexOf(s[i]))
+			continue;
+		if (s[i] >= 'a' && s[i] <= 'z' && (_indexOf(s[i - 1]) || i == 0))
+			s[i] = s[i] - 32;
+
+	}
+	return (s);
 }
