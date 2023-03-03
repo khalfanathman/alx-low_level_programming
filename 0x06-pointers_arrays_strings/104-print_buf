@@ -1,0 +1,66 @@
+#include <ctype.h>
+#include <stdio.h>
+#include <string.h>
+
+/**
+ * print_buffer - prints the content of a buffer in hex and ascii
+ * @b: pointer to the buffer
+ * @size: size of the buffer
+ */
+void print_buffer(char *b, int size)
+{
+	int i, j, k;
+	unsigned char c;
+
+	if (size <= 0)
+	{
+		printf("\n");
+		return;
+	}
+	for (i = 0; i < size; i += 10)
+	{
+		int count = 0;
+
+		printf("%08x: ", i);
+		int length = size - i, length1 = i + 9;
+
+		if (length < 10)
+			length1 = size;
+		for (j = i; j <= i + 9; j++)
+		{
+			if (count == 2)
+			{
+				printf(" ");
+				count = 0;
+			}
+			if (length1 == size && j >= size)
+			{
+				printf("  ");
+			}
+			else
+			{
+				printf("%02x", b[j]);
+			}
+			count++;
+		}
+		printf(" ");
+
+		int len = size - j, len1 = j;
+
+		if (len < 0)
+			len1 = (size - (j - 10)) + i;
+		for (k = i; k < len1; k++)
+		{
+			c = (unsigned char)b[k];
+			if (isprint(c))
+			{
+				printf("%c", c);
+			}
+			else
+			{
+				printf(".");
+			}
+		}
+		printf("\n");
+	}
+}
