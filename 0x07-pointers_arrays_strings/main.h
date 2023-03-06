@@ -1,7 +1,9 @@
 #ifndef MAIN_H_
 #define MAIN_H_
 
-/* Prototype for _memset function
+/**
+ * _memset - function that returns a pointer
+ *  to the memory area s
  * @s: pointer to memory area
  * @b: constant byte used to set memory area
  * @n: number of bytes to set
@@ -23,7 +25,9 @@ char *_memcpy(char *dest, char *src, unsigned int n);
  * @s: pointer to the string
  * @c: character to be located
  *
- * Return: a pointer to the first occurrence of the character c in the string s,
+ * Return: a pointer to the
+ *  first occurrence of the character c in
+ *  the string s,
  * or NULL if the character is not found
  */
 char *_strchr(char *s, char c);
@@ -33,8 +37,9 @@ char *_strchr(char *s, char c);
  * @s: pointer to the string
  * @accept: pointer to the string containing the characters to match
  *
- * Return: the number of bytes in the initial segment of s which consist only of
- * bytes from accept
+ * Return: the number of bytes in
+ *  the initial segment of s which consist only of
+ *  bytes from accept
  */
 unsigned int _strspn(char *s, char *accept);
 
