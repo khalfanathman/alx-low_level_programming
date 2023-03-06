@@ -29,7 +29,8 @@ General
 * In the following examples, the ``` main.c ``` files are shown as examples. You can use them to test your functions, but you don’t have to push them to your repo (if you do we won’t take them into account). We will use our own main.c files at compilation. Our ``` main.c ``` files might be different from the one shown in the examples
 The prototypes of all your functions and the prototype of the function _putchar should be included in your header file called ``` main.h ```
 * Don’t forget to push your header file
-## 0-memset.c
+
+### [0-memset.c](0-memset)
 
 * Write a function that fills memory with a constant byte.
 
@@ -38,21 +39,21 @@ The prototypes of all your functions and the prototype of the function _putchar 
 	- Returns a pointer to the memory area s
 * FYI: The standard library provides a similar function: memset. Run man memset to learn more.
 
-## [1-memcpy](1-memcpy.c)
+### [1-memcpy](1-memcpy.c)
 * Write a function that copies memory area.
 
 	- Prototype: char *_memcpy(char *dest, char *src, unsigned int n);
 	- The _memcpy() function copies n bytes from memory area src to memory area dest
 	- Returns a pointer to dest
 * FYI: The standard library provides a similar function: memcpy. Run man memcpy to learn more.
-## [strchr](2-strchr.c)
+### [2-strchr](2-strchr.c)
 * Write a function that locates a character in a string.
 
 	- Prototype: char *_strchr(char *s, char c);
 	- Returns a pointer to the first occurrence of the character c in the string s, or NULL if the character is not found
 * FYI: The standard library provides a similar function: strchr. Run man strchr to learn more.
 
-### [strspn](3-strspn.c)
+### [3-strspn](3-strspn.c)
 
 * Write a function that gets the length of a prefix substring.
 
