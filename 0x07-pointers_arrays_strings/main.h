@@ -71,5 +71,10 @@ void print_chessboard(char (*a)[8]);
  */
 void print_diagsums(int *a, int size);
 
+/**
+ * _puchar - prints char at a time
+ * @c: cahracter to output
+ */
+void _putchar(char c);
 #endif /* MAIN_H_ */
 
