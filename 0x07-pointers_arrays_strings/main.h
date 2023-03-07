@@ -52,5 +52,13 @@ unsigned int _strspn(char *s, char *accept);
  * or NULL if no such byte is found
  */
 char *_strpbrk(char *s, char *accept);
+/**
+ * _strstr - locates a substring.
+ *
+ * @haystack: string to search in.
+ * @needle: substring to search for.
+ *
+ * Return: pointer to the beginning of the located substring or NULL if not found.
+ */
+char *_strstr(char *haystack, char *needle);
 #endif /* MAIN_H_ */
-
