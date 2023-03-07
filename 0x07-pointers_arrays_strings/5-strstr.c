@@ -6,9 +6,8 @@
  * @haystack: string to search in.
  * @needle: substring to search for.
  *
- * Return: pointer to the beginning of the located substring or NULL if not found.
+ * Return: ptr to the strt of the lctd substr or NULL if othws.
  */
-
 char *_strstr(char *haystack, char *needle)
 {
 	int i, l, count = 0, length = 0, stalength = 0;
@@ -18,14 +17,11 @@ char *_strstr(char *haystack, char *needle)
 	{
 		length++;
 	}
-
 	for (l = 0; haystack[l] != '\0'; l++)
 	{
 		stalength++;
 	}
-
 	count = length;
-
 	for (i = 0; i <= stalength; i++)
 	{
 		if (haystack[i] == needle[0])
@@ -41,21 +37,17 @@ char *_strstr(char *haystack, char *needle)
 					j++;
 					k++;
 				}
-
 				else
 				{
 					bool = 1;
 					break;
 				}
 			}
-
 			if (bool && count == 0)
 			{
-				return &haystack[i];
+				return (&haystack[i]);
 			}
 		}
 	}
-
-	return NULL;
+	return (NULL);
 }
-
