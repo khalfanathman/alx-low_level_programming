@@ -1,31 +1,24 @@
-#include <stddef.h>
 /**
- * _strpbrk - searches a string for any of a set of bytes
- * @s: the string to search through
- * @accept: the set of bytes to search for
+ * _strpbrk - finds string
+ * @s: string to find stuff
+ * @accept: accepting arrays
  *
- * Return: a ptr 2 the byte in s tht matches 1 of the byts in `acpt`
- *         or NULL if no such byte is found
+ * Return: returns new value
  */
 char *_strpbrk(char *s, char *accept)
 {
-	int len = 0, length = 0, i, j, k, l;
+	int i;
+	int j;
 
-	for (j = 0; s[j] != '\0'; j++)
-		len++;
-
-	for (l = 0; accept[l] != '\0'; l++)
-		length++;
-
-	for (i = 0; i <= len; i++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		for (k = 0; k <= length; k++)
+		for (j = 0; accept[j] != '\0'; j++)
 		{
-			if (s[i] == accept[k])
-				return (&s[i]);
+			if (s[i] == accept[j])
+			{
+				return (s + i);
+			}
 		}
 	}
-
-	return (NULL);
+	return (0);
 }
-
