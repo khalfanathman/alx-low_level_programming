@@ -1,13 +1,12 @@
-#include <stdio.h>
 #include "main.h"
+#include <stdio.h>
+#define UNUSED(x) (void)(x)
 /**
- * main - Entry point of the program
- * @argc: The number of command-line arguments provided
- * @argv: An array of strings containing the command-line arguments
- *
- * Return: 0 on success
+ * main - main function
+ * @argc: argumentc
+ * @argv: vector of arguments
+ *Return: always 0
  */
-
 int main(int argc, char *argv[])
 {
 	UNUSED(argc);
