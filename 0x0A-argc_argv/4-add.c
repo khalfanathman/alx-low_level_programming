@@ -31,7 +31,16 @@ int main(int argc, char *argv[])
 		sum += atoi(argv[i]);
 	}
 
-	track == 1 ? (printf("%d\n", sum), 0) : (printf("%d\n", sum), 1);
-	return (0);
+	if (track)
+	{
+		printf("%d\n", sum);
+		return 0;
+	}
+
+	else
+	{
+		printf("%d\n", sum);
+		return 1;
+	}
 }
 
