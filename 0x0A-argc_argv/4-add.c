@@ -1,46 +1,58 @@
+#include "holberton.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
-
+#define UNUSED(x) (void)(x)
 /**
- * main - program entry point
- * @argc: argument count
- * @argv: argument vector
- * Return: 0 if successful, 1 if error occurs
+ * StringCheck - checks string
+ * @s: string to check
+ * Return: boolean
  */
-int main(int argc, char *argv[])
+int StringCheck(char *s)
 {
-	int sum = 0, i, track;
+	int i = 0;
 
-	for (i = 1; i < argc; i++)
+	for (; s[i] != '\0'; i++)
 	{
-		track = 1;
-
-		if (argv[i][0] == '-' && isdigit(argv[i][1]))
+		if (!isdigit(s[i]))
 		{
-			sum -= atoi(&argv[i][1]);
-			continue;
+			return (0);
 		}
-
-		if (!isdigit(argv[i][0]))
-		{
-			printf("%s\n", "Error");
-			return (1);
-		}
-
-		sum += atoi(argv[i]);
 	}
+	return (1);
+}
+/**
+ * main - main function
+ * @argc: argumentc
+ * @argv: vector of arguments
+ *Return: always 0
+ */
+int main(int argc, char  *argv[])
+{
+	int i;
+	int result = 0;
 
-	if (track)
+	if (argc > 1)
 	{
-		printf("%d\n", sum);
-		return 0;
+		for (i = 1; i < argc; i++)
+		{
+			if (StringCheck(argv[i]))
+			{
+				result += atoi(argv[i]);
+			}
+			else
+			{
+				printf("Error\n");
+				return (1);
+			}
+		}
+		printf("%d\n", result);
+		return (0);
 	}
-
 	else
 	{
-		printf("%d\n", sum);
-		return 1;
+		printf("%d\n", 0);
+		return (1);
 	}
-}
 
+}
