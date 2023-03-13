@@ -12,12 +12,6 @@ int main(int argc, char *argv[])
 {
 	int sum = 0, i;
 
-	if (argc < 2)
-	{
-		printf("%d\n", 0);
-		return (1);
-	}
-
 	for (i = 1; i < argc; i++)
 	{
 		if (!isdigit(argv[i][0]))
