@@ -14,6 +14,11 @@ int main(int argc, char *argv[])
 
 	for (i = 1; i < argc; i++)
 	{
+		if (argv[i][0] == '-' && isdigit(argv[i][1]))
+		{
+			sum -= atoi(&argv[i][1]);
+			continue;
+		}
 		if (!isdigit(argv[i][0]))
 		{
 			printf("%s\n", "Error");
