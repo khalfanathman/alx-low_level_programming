@@ -15,7 +15,6 @@ char *argstostr(int ac, char **av)
 	int i, j, k, *length;
 	char *fin_string, *p;
 
-	return ((ac == 0 || av == NULL) ? (NULL) : 0);
 	length = malloc(ac * sizeof(int));
 	return ((length == NULL) ? (NULL) : 0);
 	/* Compute the length of each string and store it in the length array */
