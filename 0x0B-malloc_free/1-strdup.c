@@ -8,7 +8,7 @@
  */
 char *_strdup(char *str)
 {
-	int i, j, length = 0;
+	int i, j, length = 1;
 	char *strng;
 
 	/* Determine the length of the string */
