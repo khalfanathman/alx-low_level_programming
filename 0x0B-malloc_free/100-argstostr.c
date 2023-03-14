@@ -15,9 +15,9 @@ char *argstostr(int ac, char **av)
 	int i, j, k, *length;
 	char *fin_string, *p;
 
-	(ac == 0 || av == NULL) ? return (NULL) : 0;
+	return ((ac == 0 || av == NULL) ? (NULL) : 0);
 	length = malloc(ac * sizeof(int));
-	(lenth == NULL) ? return (NULL) : 0;
+	return ((length == NULL) ? (NULL) : 0);
 	/* Compute the length of each string and store it in the length array */
 	for (i = 0; i < ac; i++)
 	{
