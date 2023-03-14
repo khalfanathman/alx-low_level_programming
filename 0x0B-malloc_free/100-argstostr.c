@@ -14,10 +14,10 @@ char *argstostr(int ac, char **av)
 {
 	int i, j, k, *length;
 	char *fin_string, *p;
-	/* Allocate memory for an array to store the length of each string */
+
+	(ac == 0 || av == NULL) ? return (NULL) : 0;
 	length = malloc(ac * sizeof(int));
-	if (length == NULL)
-		return (NULL);
+	(lenth == NULL) ? return (NULL) : 0;
 	/* Compute the length of each string and store it in the length array */
 	for (i = 0; i < ac; i++)
 	{
