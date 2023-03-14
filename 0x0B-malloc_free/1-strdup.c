@@ -12,13 +12,13 @@ char *_strdup(char *str)
 	char *strng;
 
 	/* Determine the length of the string */
+	if (str == NULL)
+		return (NULL);
 	for (i = 0; str[i] != '\0'; i++)
 	{
 		length++;
 	}
 
-	if (str == NULL)
-		return (NULL);
 
 	/* Allocate memory for the duplicated string */
 	strng = malloc(length * sizeof(char));
