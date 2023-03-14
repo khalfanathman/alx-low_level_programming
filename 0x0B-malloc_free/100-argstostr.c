@@ -42,7 +42,8 @@ char *argstostr(int ac, char **av)
 	{
 		for (k = 0; k <= length[i]; k++)
 		{
-			(k == length[i]) ? *p++ = '\n' : *p++ = av[i][k];
+			*p = (k == length[i]) ? '\n' : av[i][k];
+			p++;
 		}
 	}
 	*p = '\0';
