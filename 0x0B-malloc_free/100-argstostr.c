@@ -1,5 +1,4 @@
 #include <stdlib.h>
-
 /**
  * argstostr - Concatenates all the strings in an array into a single string,
  *             separated by newline characters.
@@ -14,14 +13,16 @@ char *argstostr(int ac, char **av)
 {
 	int i, j, k, *length;
 	char *fin_string, *p;
-
+	/* Allocate memory for an array to store the length of each string */
+	if (ac == 0 || av == NULL)
+		return (NULL);
 	length = malloc(ac * sizeof(int));
-	return ((length == NULL) ? (NULL) : 0);
+	if (length == NULL)
+		return (NULL);
 	/* Compute the length of each string and store it in the length array */
 	for (i = 0; i < ac; i++)
 	{
 		length[i] = 0;
-
 		for (j = 0; av[i][j] != '\0'; j++)
 			length[i]++;
 	}
@@ -41,15 +42,11 @@ char *argstostr(int ac, char **av)
 	{
 		for (k = 0; k <= length[i]; k++)
 		{
-			if (k == length[i])
-				*p++ = '\n';
-
-			else
-				*p++ = av[i][k];
+			(k == length[i]) ? *p++ = '\n' : *p++ = av[i][k];
 		}
 	}
 	*p = '\0';
+	/* Free the length array and return the final string */
 	free(length);
 	return (fin_string);
 }
-
