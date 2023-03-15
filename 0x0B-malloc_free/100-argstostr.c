@@ -25,6 +25,7 @@ char *argstostr(int ac, char **av)
 		length[i] = 0;
 		for (j = 0; av[i][j] != '\0'; j++)
 			length[i]++;
+		length[i]++;
 	}
 	/* Allocate memory for the final string */
 	fin_string = malloc((ac + 1) * sizeof(char *));
