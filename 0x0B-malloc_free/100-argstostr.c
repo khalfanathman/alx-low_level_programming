@@ -12,11 +12,12 @@
  */
 char *argstostr(int ac, char **av)
 {
+	
+	int i, k, len = 0;
+	char *p, *str;
+
 	if (ac == 0 || av == NULL)
 		return (NULL);
-
-	int i, j, k, len = 0;
-	char *p, *str;
 
 	for (i = 0; i < ac; i++)
 		for (j = 0; av[i][j]; j++)
