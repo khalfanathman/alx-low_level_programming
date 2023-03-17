@@ -22,5 +22,5 @@ void *malloc_checked(unsigned int b)
 	}
 
 	/* Return pointer to the allocated memory */
-	return ptr;
+	return (ptr);
 }
