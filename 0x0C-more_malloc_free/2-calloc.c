@@ -1,12 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
+
 /**
  * _calloc - Allocates memory for an array of nmemb elements of size bytes
  * @nmemb: Number of elements
  * @size: Size in bytes of each element
  *
- * Return: Ptr 2 alloctd mem or NULL if nmemb/size=0 or if malloc fails
+ * Return: Ptr 2 allocated mem or NULL if nmemb/size==0 or if malloc fails
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
@@ -17,14 +17,14 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		return (NULL);
 
 	charac = malloc(nmemb * size);
-	memset(charac, 0, sizeof(*charac));
-
-
-
-
 
 	if (charac == NULL)
 		return (NULL);
+
+	for (i = 0; i < nmemb * size; i++)
+	{
+		charac[i] = 0;
+	}
 
 	return (charac);
 }
