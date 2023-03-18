@@ -10,12 +10,18 @@
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
+	unsigned int i;
 	char *charac;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
 
 	charac = malloc(nmemb * size);
+
+	for (i = 0; i < nmemb; i++)
+	{
+		charac[i] = 0;
+	}
 
 	if (charac == NULL)
 		return (NULL);
