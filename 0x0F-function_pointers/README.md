@@ -21,13 +21,13 @@
 * Don’t forget to push your header file
 * All your header files should be include guarded
 
-### [0. What's my name].(./0-print_name.c)
+### [0. What's my name](./0-print_name.c)
 
 	* Write a function that prints a name.
 
 		-  Prototype: ``` void print_name(char *name, void (*f)(char *)); ```
 
-### [1. If you spend too much time thinking about a thing, you'll never get it done].(1-array_iterator.c)
+### [1. If you spend too much time thinking about a thing, you'll never get it done](1-array_iterator.c)
 
 	* Write a function that executes a function given as a parameter on each element of an array.
 
@@ -35,7 +35,7 @@
 		where size is the size of the array
 		and action is a pointer to the function you need to use
 
-### [2. To hell with circumstances; I create opportunities].(./2-int_index.c)
+### [2. To hell with circumstances; I create opportunities](./2-int_index.c)
 
 	* Write a function that searches for an integer.
 
@@ -47,7 +47,7 @@
 		- If size <= 0, return -1
 
 
-### [3. A goal is not always meant to be reached, it often serves simply as something to aim at].()
+### [3. A goal is not always meant to be reached, it often serves simply as something to aim at]()
 
 	* Write a program that performs simple operations.
 
@@ -67,7 +67,7 @@
 			- if the user tries to divide (/ or %) by 0, print Error, followed by a new line, and exit with the status 100
 			- This task requires that you create four different files.
 
-### [3-calc.h].(./3-calc.h)
+### [3-calc.h](./3-calc.h)
 
 	* This file should contain all the function prototypes and data structures used by the program. You can use this structure:
 
@@ -83,7 +83,7 @@
 			    char *op;
 			    int (*f)(int a, int b);
 			} op_t; ```
-### [3-op_functions.c].(./3-op_functions.c)
+### [3-op_functions.c](./3-op_functions.c)
 
 	* This file should contain the 5 following functions (not more):
 
@@ -92,7 +92,7 @@
 		- op_mul: returns the product of a and b. Prototype: int op_mul(int a, int b);
 		- op_div: returns the result of the division of a by b. Prototype: int op_div(int a, int b);
 		- op_mod: returns the remainder of the division of a by b. Prototype: int op_mod(int a, int b);
-### [3-get_op_func.c].(./3-get_op_func.c)
+### ![3-get_op_func.c].(./3-get_op_func.c)
 
 	* This file should contain the function that selects the correct function to perform the operation asked by the user. You’re not allowed to declare any other function.
 
@@ -116,7 +116,7 @@
 			{NULL, NULL}
 		    };
 		    int i; ```
-### [3-main.c].()
+### [3-main.c]()
 
 	* This file should contain your main function only.
 
@@ -144,7 +144,7 @@
 		44
 		julien@ubuntu:~/0x0e. Function pointers$ ```
 
-### [4. Most hackers are young because young people tend to be adaptable. As long as you remain adaptable, you can always be a good hacker].()
+### [4. Most hackers are young because young people tend to be adaptable. As long as you remain adaptable, you can always be a good hacker]()
 
 	* Write a program that prints the opcodes of its own main function.
 
