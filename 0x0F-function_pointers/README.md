@@ -68,7 +68,8 @@
 ### [3-calc.h](./3-calc.h)
 
 	* This file should contain all the function prototypes and data structures used by the program. You can use this structure:
- ```	/**
+     ```
+	/**
 	 * struct op - Struct op
 	 *
 	 * @op: The operator
@@ -78,7 +79,8 @@
 	{
 	    char *op;
 	    int (*f)(int a, int b);
-	} op_t; ```
+	} op_t; 
+     ```
 ### [3-op_functions.c](./3-op_functions.c)
 
 	* This file should contain the 5 following functions (not more):
@@ -111,7 +113,8 @@
 	{"%", op_mod},
 	{NULL, NULL}
    		 };
- int i; ```
+ int i;
+  ```
 ### [3-main.c]()
 
 	* This file should contain your main function only.
@@ -121,9 +124,10 @@
 		- You have to use atoi to convert arguments to int
 		- You are not allowed to use any kind of loop
 		- You are allowed to use a maximum of 3 if statements
-	*Compilation and examples:
+* Compilation and examples:
 
-``` julien@ubuntu:~/0x0e. Function pointers$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 3-main.c 3-op_functions.c 3-get_op_func.c -o calc
+``` 
+              julien@ubuntu:~/0x0e. Function pointers$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 3-main.c 3-op_functions.c 3-get_op_func.c -o calc
 		julien@ubuntu:~/0x0e. Function pointers$ ./calc 1 + 1
 		2
 		julien@ubuntu:~/0x0e. Function pointers$ ./calc 97 + 1
@@ -138,7 +142,8 @@
 		926
 		julien@ubuntu:~/0x0e. Function pointers$ ./calc 1024 '%' 98
 		44
-		julien@ubuntu:~/0x0e. Function pointers$ ```
+		julien@ubuntu:~/0x0e. Function pointers$ 
+```
 
 ### [4. Most hackers are young because young people tend to be adaptable. As long as you remain adaptable, you can always be a good hacker]()
 
@@ -149,7 +154,7 @@
 			- the opcodes should be printed in hexadecimal, lowercase
 			- each opcode is two char long
 			- listing ends with a new line
-			```see example```
+		``` see example ```
 			- You are allowed to use printf and atoi
 			- You have to use atoi to convert the argument to an int
 			- If the number of argument is not the correct one, print Error, followed by a new line, and exit with the status 1
