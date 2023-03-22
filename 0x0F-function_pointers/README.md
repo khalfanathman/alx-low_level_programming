@@ -24,14 +24,12 @@
 ### [0. What's my name](./0-print_name.c)
 
 	* Write a function that prints a name.
-
-		-  Prototype: ``` void print_name(char *name, void (*f)(char *)); ```
+- Prototype: ``` void print_name(char *name, void (*f)(char *)); ```
 
 ### [1. If you spend too much time thinking about a thing, you'll never get it done](1-array_iterator.c)
 
 	* Write a function that executes a function given as a parameter on each element of an array.
-
-		- ``` Prototype: void array_iterator(int *array, size_t size, void (*action)(int)); ```
+        ``` Prototype: void array_iterator(int *array, size_t size, void (*action)(int)); ```
 		where size is the size of the array
 		and action is a pointer to the function you need to use
 
@@ -70,19 +68,17 @@
 ### [3-calc.h](./3-calc.h)
 
 	* This file should contain all the function prototypes and data structures used by the program. You can use this structure:
-
-
-		```	/**
-			 * struct op - Struct op
-			 *
-			 * @op: The operator
-			 * @f: The function associated
-			 */
-			typedef struct op
-			{
-			    char *op;
-			    int (*f)(int a, int b);
-			} op_t; ```
+ ```	/**
+	 * struct op - Struct op
+	 *
+	 * @op: The operator
+	 * @f: The function associated
+	 */
+	typedef struct op
+	{
+	    char *op;
+	    int (*f)(int a, int b);
+	} op_t; ```
 ### [3-op_functions.c](./3-op_functions.c)
 
 	* This file should contain the 5 following functions (not more):
@@ -92,7 +88,7 @@
 		- op_mul: returns the product of a and b. Prototype: int op_mul(int a, int b);
 		- op_div: returns the result of the division of a by b. Prototype: int op_div(int a, int b);
 		- op_mod: returns the remainder of the division of a by b. Prototype: int op_mod(int a, int b);
-### ![3-get_op_func.c].(./3-get_op_func.c)
+### [3-get_op_func.c](./3-get_op_func.c)
 
 	* This file should contain the function that selects the correct function to perform the operation asked by the user. You’re not allowed to declare any other function.
 
@@ -107,15 +103,15 @@
 		- You are not allowed to use more than one while loop in your code
 		- If s does not match any of the 5 expected operators (+, -, *, /, %), return NULL
 		You are only allowed to declare these two variables in this function:
-		  ```  op_t ops[] = {
-			{"+", op_add},
-			{"-", op_sub},
-			{"*", op_mul},
-			{"/", op_div},
-			{"%", op_mod},
-			{NULL, NULL}
-		    };
-		    int i; ```
+  ```  op_t ops[] = {
+	{"+", op_add},
+	{"-", op_sub},
+	{"*", op_mul},
+	{"/", op_div},
+	{"%", op_mod},
+	{NULL, NULL}
+   		 };
+ int i; ```
 ### [3-main.c]()
 
 	* This file should contain your main function only.
@@ -127,7 +123,7 @@
 		- You are allowed to use a maximum of 3 if statements
 	*Compilation and examples:
 
-	```	julien@ubuntu:~/0x0e. Function pointers$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 3-main.c 3-op_functions.c 3-get_op_func.c -o calc
+``` julien@ubuntu:~/0x0e. Function pointers$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 3-main.c 3-op_functions.c 3-get_op_func.c -o calc
 		julien@ubuntu:~/0x0e. Function pointers$ ./calc 1 + 1
 		2
 		julien@ubuntu:~/0x0e. Function pointers$ ./calc 97 + 1
