@@ -25,4 +25,11 @@ struct dog
  * Description: initializes a dog structure with name, age and owner info
  */
 void init_dog(struct dog *d, char *name, float age, char *owner);
+/**
+ * print_dog - prints a dog structure
+ * @d: pointer to dog structure
+ *
+ * Description: prints the name, age, and owner of a dog structure
+ */
+void print_dog(struct dog *d);
 #endif /**_DOG_H*/
