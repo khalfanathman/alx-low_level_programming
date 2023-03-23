@@ -9,7 +9,6 @@
  */
 void print_name(char *name, void (*f)(char *))
 {
-	/* Call the provided function with the given name argument */
 	if (name != NULL && f != NULL)
 		f(name);
 }
