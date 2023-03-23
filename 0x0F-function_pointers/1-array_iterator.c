@@ -1,5 +1,6 @@
-#include <stddef.h>
-
+#include <stdio.h>
+#include "function_pointers.h"
+#include <stdlib.h>
 /**
  * array_iterator - itrates over n arr n applies the prvidd func 2 each elm
  * @array: pointer to the first element of the array
