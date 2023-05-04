@@ -1,6 +1,5 @@
-#include <string.h>
-#include <math.h>
-#include <stdio.h>
+#include "main.h"
+#include "_strlen.c"
 
 /**
  * binary_to_uint - converts a binary number to an unsigned integer
@@ -10,7 +9,7 @@
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int sum = 0;
-	int i, length = strlen(b) - 1;
+	int i, length = _strlen(b) - 1;
 
 
 	for (i = length; i >= 0; i--)
