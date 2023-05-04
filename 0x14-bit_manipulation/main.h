@@ -70,5 +70,10 @@ int clear_bit(unsigned long int *n, unsigned int index);
  * Return: the number of bits to flip
  */
 unsigned int flip_bits(unsigned long int n, unsigned long int m);
-
+/**
+ * get_endianness - checks the endianness of the system
+ *
+ * Return: 0 if big endian, 1 if little endian
+ */
+int get_endianness(void);
 #endif
