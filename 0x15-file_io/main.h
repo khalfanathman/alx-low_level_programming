@@ -41,6 +41,29 @@ int append_text_to_file(const char *filename, char *text_content);
  *              the contents to the file descriptor @fd_to using a buffer.
  * Return: Number of bytes written (Success), -1 on error
  */
-int read_to_buff(int fd_to,int fd_from, char *str);
+int read_to_buff(int fd_to, int fd_from, char *str);
+
+/**
+ * data_str - Determine the data encoding of the ELF file.
+ * @data_string: String to store the data encoding information.
+ *
+ * This function determines the data encoding of the ELF file by checking the value of
+ * the e_ident[EI_DATA] field in the ELF header. It sets the data_string
+ * accordingly and returns it.
+ *
+ * Return: The updated data_string.
+ */
+char *data_str(char *data_string);
+/**
+ * classic_str - Determine the class of the ELF file.
+ * @class_string: String to store the class information.
+ *
+ * This function determines the class of the ELF file by checking the value of
+ * the e_ident[EI_CLASS] field in the ELF header. It sets the class_string
+ * accordingly and returns it.
+ *
+ * Return: The updated class_string.
+ */
+char *classic_str(char *class_string);
 
 #endif /* MAIN_H */
